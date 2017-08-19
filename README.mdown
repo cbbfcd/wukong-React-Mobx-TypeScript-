@@ -1,0 +1,53 @@
+# welcome start the journey with wukong(typescript版)
+> author: @huangteng,@wangting,@chenqiyu
+***
+
+<div align=center>
+    <img src="./docs/wukong.PNG" width="400" height="400" alt="wukong-index"/>
+</div>
+
+# 简介
+
+升级悟空支持typeScript, 新加了HappyPack优化loader加载
+
+
+未来:
+1. 单元测试配置
+2. 完整demo
+3. 多页面配置
+4. 支持移动app开发
+5. ...
+
+# 使用
+```
+1. git clone https://github.com/cbbfcd/wukong.git
+2. cd到文件 cnpm install 推荐使用阿里镜像
+3. npm run redll 这个操作是打包dll并运行。
+4. 以后就不需要run redll，直接 npm start即可。
+5. 更多cli参考下面的文档
+```
+
+
+# 相关文档
+<a href="./docs/doc.mdown">Go</a>
+
+# 相关命令
+```
+npm start: 启动项目，注意需要先执行npm run dll.
+npm run dll: 打包dll文件.
+npm run build: 生产环境打包，并打开bundle的分析网页.
+npm run redll: 插件升级后运行，会重新打包dll,并启动。建议第一次直接运行此命令
+npm run eslint: 代码规范检查.
+npm run preview: 打包出来的文件 ，启动一个服务预览
+npm run deploy: 插件升级后重新打包dll,并打包成dist文件。
+npm run tslint: ts规范性检查
+npm run lint: 所有规范性检查
+```
+
+# 声明
+心怀感谢，共建悟空。
+希望大家一起维护、持续的更新、升级悟空。
+
+
+
+

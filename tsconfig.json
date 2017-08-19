@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "es5",
+    "jsx": "react",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowJs":true,
+    "declaration": false,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "removeComments": true,
+    "strictNullChecks": false,
+    "outDir": "dist"
+  },
+  "exclude": [
+    "static",
+    "node_modules"
+  ],
+  "files": [
+    "typings/index.d.ts"
+  ]
+}

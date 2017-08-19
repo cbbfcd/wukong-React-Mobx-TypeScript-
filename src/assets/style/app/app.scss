@@ -1,0 +1,106 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.index-wrapper{
+	position: absolute;
+	display: flex;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	flex-direction: column;
+	min-width: 700px;
+	.example-nav{
+		position:absolute;
+		top:0;
+		width: 100%;
+		height: 60px;
+		background-color: #4F504F;
+		.nav-container{
+			width:100%;
+			height:100%;
+			display: flex;
+			justify-content: flex-end;
+			align-items:center;
+			.nav-btn{
+				padding: 0 20px;
+				a{
+					color:white;
+				}
+			}
+		}
+		.login-center{
+				position:absolute;
+				top:50%;
+				transform:translateY(-50%);
+				right:35px;
+				input{
+					width:35%;
+					height:30px;
+					border-radius: 5px;
+					margin-left: 20px;
+				}
+				a{
+					border: 0.5px solid #d9d9d9;
+					margin-left:20px;
+					padding: 5px 15px;
+					background-color: #fff;
+					border-radius:5px;
+					position:absolute;
+					top:50%;
+					transform:translateY(-50%);
+				}
+			}
+	}
+	.example-body{
+		position:absolute;
+		top:60px;
+		width: 100%;
+		display:flex;
+		justify-content: flex-start;
+		align-items:center;
+		flex-direction: column;
+		.example-title{
+			text-align: center;
+		}
+		.example-img{
+			width:400px;
+			height:400px;
+			background-image: url(wukong.jpg);
+			background-size:100%;
+		}
+	}
+	.class-notfound{
+		width: 100%;
+		height:100%;
+		background-color: #e8e8e8;
+		h1{
+			text-align:center;
+			font-size: 200px;
+		}
+	}
+	.pop-win-out{
+		z-index: 1000;
+		position:absolute;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		background-color: rgba(0, 0, 0, 0.5);
+		overflow:hidden;
+		outline: 0;
+		opacity: 0.5;
+		filter:alpha(opacity=50);
+		display:flex;
+		justify-content: center;
+		align-items:center;
+		.pop-win-in{
+			border-radius: 5px;
+			width:55%;
+			height:60%;
+			background-color:white;
+		}
+	}
+}
