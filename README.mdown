@@ -3,7 +3,7 @@
 ***
 
 <div align=center>
-    <img src="./wukong.PNG" width="400" height="400" alt="wukong-index"/>
+    <img src="./wukong.png" width="400" height="400" alt="wukong-index"/>
 </div>
 
 # 简介
@@ -24,7 +24,7 @@
 
 
 # 相关文档
-<a href="./docs/doc.mdown">Go</a>
+<a href="https://github.com/cbbfcd/wukong/blob/master/docs/doc.mdown">Go</a>
 
 # 相关命令
 ```
