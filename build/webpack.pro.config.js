@@ -6,6 +6,7 @@ var path = require('path'),
 	src = path.join(__dirname, '../src'),
 	ExtractTextPlugin = require('extract-text-webpack-plugin'),
 	BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin,
+	HappyPack = require('happypack'),
 	env = process.env.NODE_ENV;
 
 module.exports = {
@@ -23,21 +24,15 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.jsx?$/,
-				exclude: /node_modules/,
-				loader: "babel-loader",
-				options: {
-					presets: [
-                        ["es2015", {"modules": false}],
-                        "stage-0",
-                        "react",
-                    ],
-                    plugins: [
-                        "transform-async-to-generator",
-                        "transform-decorators-legacy"
-                    ]
-				}
-			},
+				test: /\.tsx?$/,
+				exclude: [/node_modules/],
+				loader: ['awesome-typescript-loader']
+	        },
+	        {
+				test: /\.js$/,
+				exclude: [/node_modules/],
+				loader: ['happypack/loader?id=js']
+	        },
 			{
 				test: /\.scss|css$/i,
 				use: ExtractTextPlugin.extract({
@@ -104,6 +99,12 @@ module.exports = {
 		]
 	},
 	plugins: [
+		new HappyPack({
+			verbose: false,
+			id: 'js',
+			threads: 4,
+			loaders: [ 'babel-loader' ]
+		}),
 		new CleanWebpackPlugin('dist', {
 		    root: path.resolve(__dirname, '..'),
 		    verbose: false
