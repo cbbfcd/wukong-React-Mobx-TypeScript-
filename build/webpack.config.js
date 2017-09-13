@@ -4,7 +4,6 @@ var path = require('path'),
 	HtmlWebpackPlugin = require('html-webpack-plugin'),
 	NyanProgressPlugin = require('nyan-progress-webpack-plugin'),
 	src = path.join(__dirname, '../src'),
-	bundleConfig = require("./dist/bundle-config.json"),
 	HappyPack = require('happypack'),
 	env = process.env.NODE_ENV;
 
@@ -130,8 +129,6 @@ module.exports = {
         	hash: false,
         	filename: 'index.html',
         	template: path.join(src, 'index.html'),
-        	bundleName: bundleConfig.vendor["js"],
-        	isProd: env === 'production',
         	inject: true
         }),
         new HappyPack({
