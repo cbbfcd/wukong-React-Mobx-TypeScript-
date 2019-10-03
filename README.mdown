@@ -1,4 +1,7 @@
 # welcome start the journey with wukong(typescript版)
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/cbbfcd/wukong-React-Mobx-TypeScript-.svg)](https://greenkeeper.io/)
+
 > author: @huangteng,@wangting,@chenqiyu
 ***
 
